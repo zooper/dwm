@@ -145,7 +145,6 @@ xfont_create(Drw *drw, const char *fontname, FcPattern *fontpattern)
 		XftFontClose(drw->dpy, xfont);
 		return NULL;
 	}
-
 	font = ecalloc(1, sizeof(Fnt));
 	font->xfont = xfont;
 	font->pattern = pattern;
